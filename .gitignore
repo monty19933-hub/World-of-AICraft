@@ -1,0 +1,33 @@
+# Python/runtime noise
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local logs and temp output
+*.log
+*.tmp
+*.bak
+
+# Generated client patch/build artifacts.
+# Leave bulky MPQ/DBC/model/texture outputs local unless they are intentionally
+# moved into source control later.
+*.MPQ
+*.mpq
+*.dbc
+*.blp
+*.m2
+*.M2
+*.skin
+*.anim
+
+artifacts/**/mpq_staging/
+artifacts/**/client_patch*/
+artifacts/**/*_patch_staging*/
+artifacts/**/downported_models/
+artifacts/**/downported_glaives/
+artifacts/**/downported_spell_visuals/
+artifacts/**/glaive_downport_test/
+artifacts/**/worgoblin_patch_z_staging/
+
+# Third-party checkout used as source material; keep it managed separately.
+vendor/
