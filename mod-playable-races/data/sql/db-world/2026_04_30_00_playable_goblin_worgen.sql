@@ -39,8 +39,8 @@ UNION ALL SELECT @WORGEN, 3, button, action, type FROM playercreateinfo_action W
 UNION ALL SELECT @WORGEN, 11, button, action, type FROM playercreateinfo_action WHERE race = 4 AND class = 11;
 
 INSERT IGNORE INTO playercreateinfo_skills (raceMask, classMask, skill, `rank`, `comment`) VALUES
-(@GOBLIN_MASK, 0, 109, 0, 'Language: Orcish'),
-(@WORGEN_MASK, 0, 98, 0, 'Language: Common');
+(@GOBLIN_MASK, 0, 109, 300, 'Language: Orcish'),
+(@WORGEN_MASK, 0, 98, 300, 'Language: Common');
 
 DELETE FROM playercreateinfo_spell_custom WHERE racemask IN (@GOBLIN_MASK, @WORGEN_MASK, @OLD_WORGEN_MASK);
 INSERT INTO playercreateinfo_spell_custom (racemask, classmask, Spell, Note) VALUES
